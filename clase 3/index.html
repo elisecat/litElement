@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3 - Styles</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        a {
+            color: orange;
+        }
+        span {
+            color: blueviolet;
+        }
+        card-box {
+            background-color: #f0f0f0;
+            margin-bottom: 15px;
+            --card-box-title-color: blue; 
+            --sw-icon-color: pink;  
+            --sw-icon-size: 48px;
+        }
+        .segunda {
+            --card-box-background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clase 3 - Styles</h1>
+    <span>dfggmkidscfksdasld</span>
+    <card-box title="Prueba!!!!">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quod adipisci illo quia laudantium voluptatem sint veritatis tempore minima atque ducimus, voluptatum harum consequatur maxime natus vitae sit accusantium officia?</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque placeat cumque necessitatibus explicabo, molestiae veniam unde libero est ut maiores, adipisci quo, accusantium asperiores repellat minima laboriosam laudantium quibusdam consectetur.</p>
+        </div>
+    </card-box>
+    <card-box hidden>
+        Hola!!!!
+    </card-box>
+    <card-box class="red">
+         Hola   
+    </card-box>
+    <card-box  title="mi titulo" class="segunda">
+        <sw-icon icon="done"></sw-icon>
+    </card-box>
+    <sw-icon icon="bookmark"></sw-icon>
+    <hr>
+
+    <user-avatar src="orange.jpg"></user-avatar>
+    <user-avatar src="a.jpg"></user-avatar>
+
+    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="src/index.js" type="module"></script>
+</body>
+</html>
